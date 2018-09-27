@@ -11,8 +11,7 @@
     "test": "mocha --no-timeouts -r babel-register 'test/**/test-*.js' && eslint test lib",
     "eslint": "eslint test lib",
     "test:debug": "mocha --debug-brk 'test/**/test-*.js'",
-    "start": "webpack-dev-server --hot",
-    "deploy": "surge --project dist --domain frontend-testing.surge.sh"
+    "start": "webpack-dev-server --hot"
   },
   "repository": {
     "type": "git",
@@ -50,7 +49,6 @@
     "jsdom": "^12.0.0",
     "mocha": "^5.2.0",
     "selenium-webdriver": "^3.6.0",
-    "surge": "^0.20.1",
     "webpack": "^4.20.2",
     "webpack-cli": "^3.1.1",
     "webpack-dev-server": "^3.1.9"
