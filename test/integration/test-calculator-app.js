@@ -1,6 +1,6 @@
-const {describe, it, before, after} = require('mocha')
-const {expect} = require('chai')
-const {JSDOM} = require('jsdom')
+const { describe, it, before, after } = require('mocha')
+const { expect } = require('chai')
+const { JSDOM } = require('jsdom')
 const React = require('react')
 const e = React.createElement
 const ReactDom = require('react-dom')

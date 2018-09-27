@@ -1,5 +1,5 @@
-const {describe, it} = require('mocha')
-const {expect} = require('chai')
+const { describe, it } = require('mocha')
+const { expect } = require('chai')
 const calculator = require('../../lib/calculator')
 
 describe('calculator', function () {

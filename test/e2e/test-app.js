@@ -1,11 +1,11 @@
-const {describe, it, before, after} = require('mocha')
-const {Eyes} = require('eyes.selenium')
+const { describe, it, before, after } = require('mocha')
+const { Eyes } = require('eyes.selenium')
 const path = require('path')
 const express = require('express')
 const webdriver = require('selenium-webdriver')
 require('chromedriver')
 
-const {By, until} = webdriver
+const { By, until } = webdriver
 
 describe('calculator app', function () {
   let driver
@@ -63,7 +63,7 @@ describe('calculator app', function () {
 
       eyes.setApiKey(process.env.APPLITOOLS_API_KEY)
 
-      await eyes.open(driver, 'Calculator App', 'Tests', {width: 800, height: 600})
+      await eyes.open(driver, 'Calculator App', 'Tests', { width: 800, height: 600 })
     })
 
     after(async () => {
