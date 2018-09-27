@@ -8,7 +8,8 @@
   "main": "index.js",
   "scripts": {
     "build": "webpack && cp public/* dist",
-    "test": "mocha --no-timeouts -r babel-register 'test/**/test-*.js' && eslint test lib",
+    "test": "npm run test:mocha && eslint test lib",
+    "test:mocha": "mocha --no-timeouts -r babel-register 'test/unit/test-*.js' 'test/integration/test-*.js' 'test/e2e/test-*.js'",
     "eslint": "eslint test lib",
     "test:debug": "mocha --debug-brk 'test/**/test-*.js'",
     "start": "webpack-dev-server --hot"
