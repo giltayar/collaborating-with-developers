@@ -18,7 +18,7 @@ describe('calculator app component', function () {
   })
 
   it('should work', function () {
-    ReactDom.render(e(CalculatorApp), document.getElementById('container'))
+    ReactDom.render(<CalculatorApp />, document.getElementById('container'))
 
     const displayElement = document.querySelector('.display')
 
